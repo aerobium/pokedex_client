@@ -1,0 +1,174 @@
+.chunk-border {
+    border: solid 1px #dddddd;
+    padding-bottom: 20px;
+    height: 195px;
+}
+
+.chunk-img-wrapper {
+    height: 120px;
+}
+
+#info-wait-img {
+    margin: 0 auto;
+    display: block;
+}
+
+#chunk-wait-img {
+    margin: 0 auto;
+    display: block;
+}
+
+.get-more-button-wrapper {
+    text-align: center;
+}
+
+.pok-img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#pock-info {
+    border: solid 1px #dddddd;
+    display: none;
+}
+
+.pok-name {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+img.img-responsive {
+    margin: 0 auto;
+}
+
+.filters-block {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.filter-button {
+    margin: 5px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.single-pok {
+    margin-bottom: 10px;
+    height: 215px;
+}
+
+.single-pok button {
+    margin-left: 10px;
+    width: 42%;
+    white-space: normal;
+}
+
+button.fire {
+    background: #F08030;
+}
+
+button.water {
+    background: #6890F0;
+}
+
+button.poison {
+    background: #A040A0;
+}
+
+button.flying {
+    background: #A890F0;
+}
+
+button.ground {
+    background: #E0C068;
+}
+
+button.fairy {
+    background: #8D274E;
+}
+
+button.bug {
+    background: #A8B820;
+}
+
+button.normal {
+    background: #A8A878;
+}
+
+button.electric {
+    background: #F8D030;
+}
+
+button.grass {
+    background: #78C850;
+}
+
+button.fighting {
+    background: #C03028;
+}
+
+button.psychic {
+    background: #F85888;
+}
+
+button.rock {
+    background: #B8A038;
+}
+
+button.steel {
+    background: #B8B8D0;
+}
+
+button.ghost {
+    background: #705898;
+}
+
+button.ice {
+    background: #98D8D8;
+}
+
+button.dragon {
+    background: #7038F8;
+}
+
+button.dark {
+    background: #705848;
+}
+
+button.btn-checked {
+    background: red;
+}
+
+.table td {
+    text-align: center;
+}
+
+caption {
+    color: black;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 768px) {
+    .btn-responsive {
+        padding:2px 4px;
+        font-size:80%;
+        line-height: 1;
+    }
+
+    .middle-helper {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+        padding:4px 9px;
+        font-size:75%;
+        line-height: 1.2;
+    }
+}
+
+
