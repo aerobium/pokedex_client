@@ -3,15 +3,19 @@ $('.single-pok').remove();
 var offset = 0;
 var filtersArr = [];
 var checkedFilterArr = [];
+var isDrawCycleFinished = true;
 
 beginDrawProcedure(offset);
 
 $('#get-more-pokemons').on('click', function () {
-    offset += 12;
-    $('#filters').empty();
-    $('#pock-block').empty();
-    $('#chunk-wait-img').show();
-    beginDrawProcedure(offset);
+    if (isDrawCycleFinished){
+        isDrawCycleFinished = false;
+        offset += 12;
+        $('#filters').empty();
+        $('#pock-block').empty();
+        $('#chunk-wait-img').show();
+        beginDrawProcedure(offset);
+    }
 });
 
 function beginDrawProcedure(offset) {
@@ -107,4 +111,5 @@ function drawSinglePokemonChunk(name, id, types) {
     $('.pok-name').last().text(name);
     $('.pok-img').last().attr('src', 'http://pokeapi.co/media/img/' + id + '.png');
     $('.single-pok').last().attr('id', id);
+    isDrawCycleFinished = true;
 }
